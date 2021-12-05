@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const EncripController = require('../controllers/encrip.crotoller')
+const EncryptController = require('../../modules/encrypt/controllers/index');
 
 
 //initial route
@@ -8,10 +8,10 @@ router.get('/',(req,res)=>{
 })
 
 //router create
-router.post('/create', EncripController.create)
+router.post('/create', EncryptController.create)
 
 //router search
-router.get('/encripts/:id', EncripController.search)
+router.get('/encripts/:id', EncryptController.search)
 
 
 module.exports = router

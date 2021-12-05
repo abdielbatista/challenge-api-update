@@ -1,4 +1,4 @@
-const Crypto = require("./../services");
+const Crypto = require("./../../../shared/crypto/crypto");
 const pg = require("./../../../config/database/postgresql").pool;
 const app = require("express");
 
