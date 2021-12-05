@@ -2,15 +2,15 @@ const router = require('express').Router();
 const EncripController = require('../controllers/encrip.crotoller')
 
 
-//rota inicial
+//initial route
 router.get('/',(req,res)=>{
     res.json({message: "Olá humano"});
 })
 
-//create
+//router create
 router.post('/create', EncripController.create)
 
-//search
+//router search
 router.get('/encripts/:id', EncripController.search)
 
 
