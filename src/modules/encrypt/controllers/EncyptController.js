@@ -1,5 +1,5 @@
-const Crypto = require("../services/crypto");
-const pg = require("../database/postgresql").pool;
+const Crypto = require("./../services");
+const pg = require("./../../../config/database/postgresql").pool;
 const app = require("express");
 
 module.exports = {
