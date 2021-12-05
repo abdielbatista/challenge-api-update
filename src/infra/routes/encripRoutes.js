@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const EncryptController = require('../../modules/encrypt/controllers/index');
+const EncryptController = require('../../modules/encrypt/controllers');
 
 
 //initial route

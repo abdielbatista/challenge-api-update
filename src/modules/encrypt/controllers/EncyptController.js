@@ -15,9 +15,7 @@ module.exports = {
       }
 
       //const cryptoName = Crypto.encrypt(name);
-      var hash = Crypto.encrypt(name);
-
-      
+      var hash = Crypto.encrypt(name);      
       
       const text = "INSERT INTO data(crypto, name) VALUES($1, $2) RETURNING *";
       const values = [JSON.stringify(hash), name];
