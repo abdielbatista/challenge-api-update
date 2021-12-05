@@ -14,8 +14,10 @@ module.exports = {
         });
       }
 
-      const cryptoName = Crypto.encrypt(name);
+      //const cryptoName = Crypto.encrypt(name);
       var hash = Crypto.encrypt(name);
+
+      
       
       const text = "INSERT INTO data(crypto, name) VALUES($1, $2) RETURNING *";
       const values = [JSON.stringify(hash), name];
@@ -30,7 +32,6 @@ module.exports = {
         }
       });
       
-     
       const queryselect = {
         name: "select",
         text: "SELECT id FROM data WHERE name = $1",
